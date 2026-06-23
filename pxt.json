@@ -1,0 +1,19 @@
+{
+    "name": "pxt-spelen-met-lego",
+    "version": "0.0.1",
+    "description": "Extensie voor micro:bit met Wukong board. Bevat motoraansturing met timer en sonar:bit afstandsmeting.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "wukong": "github:elecfreaks/pxt-wukong"
+    },
+    "files": [
+        "drive.ts",
+        "sonar.ts",
+        "README.md"
+    ],
+    "testFiles": [],
+    "supportedTargets": [
+        "microbit"
+    ]
+}
