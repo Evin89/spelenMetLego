@@ -3,7 +3,7 @@
  * Gebruikt het correcte 1µs triggersignaal voor de ingebouwde MCU op de sensor.
  */
 
-//% color=#0fbc11 icon="\uf140" block="Sonar"
+//% color=#e85b3f icon="\uf1b9" block="Spelen met Lego"
 namespace spelenMetLego {
 
     /**
