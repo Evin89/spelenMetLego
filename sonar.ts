@@ -4,7 +4,7 @@
  */
 
 //% color=#e85b3f icon="\uf1b9" block="Spelen met Lego"
-namespace spelenMetLego {
+namespace Sonar {
 
     /**
      * Meet de afstand in cm.
