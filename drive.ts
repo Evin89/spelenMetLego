@@ -4,7 +4,7 @@
  */
 
 //% color=#e85b3f icon="\uf1b9" block="Rijden"
-namespace rijden {
+namespace spelenMetLego {
 
     /**
      * Stel de snelheid van M1 en M2 in en rij gedurende een aantal milliseconden.
