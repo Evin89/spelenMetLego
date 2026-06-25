@@ -3,7 +3,7 @@
  * Combineert motorsnelheid en pauze in één blok.
  */
 
-//% color=#e85b3f icon="\uf1b9" block="Rijden"
+//% color=#e85b3f icon="\uf1b9" block="Spelen met Lego"
 namespace spelenMetLego {
 
     /**
