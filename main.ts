@@ -27,8 +27,10 @@ namespace spelenMetLego {
     //% group="Rijden"
     //% weight=100
     export function rijMs(m1: number, m2: number, ms: number): void {
-        wukong.motorRun(wukong.Motors.M1, m1)
-        wukong.motorRun(wukong.Motors.M2, m2)
+        if (!control.isSimulator()) {
+            wukong.motorRun(wukong.Motors.M1, m1)
+            wukong.motorRun(wukong.Motors.M2, m2)
+        }
         basic.pause(ms)
     }
 
@@ -40,8 +42,10 @@ namespace spelenMetLego {
     //% group="Rijden"
     //% weight=90
     export function stop(): void {
-        wukong.motorRun(wukong.Motors.M1, 0)
-        wukong.motorRun(wukong.Motors.M2, 0)
+        if (!control.isSimulator()) {
+            wukong.motorRun(wukong.Motors.M1, 0)
+            wukong.motorRun(wukong.Motors.M2, 0)
+        }
     }
 
     // -------------------------
