@@ -1,6 +1,6 @@
 # Spelen met Lego
 
-MakeCode extensie voor micro:bit met Wukong board. Bevat blokken voor motoraansturing en afstandsmeting met de sonar:bit.
+MakeCode extensie voor micro:bit met Wukong board. Bevat blokken voor motoraansturing, afstandsmeting met de sonar:bit en een 4-cijferig display.
 
 ## Extensie toevoegen
 
@@ -8,10 +8,10 @@ MakeCode extensie voor micro:bit met Wukong board. Bevat blokken voor motoraanst
 2. Klik op het **tandwiel** (⚙️) rechtsboven → **Extensions**
 3. Plak de volgende URL in de zoekbalk en druk op Enter:
    ```
-   https://github.com/JOUWGEBRUIKERSNAAM/pxt-spelen-met-lego
+   https://github.com/Evin89/spelenMetLego
    ```
 4. Klik op de extensie om hem toe te voegen
-5. De blokken verschijnen onder **Rijden** en **Sonar**
+5. De blokken verschijnen onder **Spelen met Lego**
 
 ---
 
@@ -42,6 +42,25 @@ Herhaalt automatisch tot 5 keer totdat er een geldige meting is. Makkelijker voo
 
 ### `sonar object dichterbij dan X cm op pin`
 Geeft `true` als er een object binnen de opgegeven afstand is. Handig voor obstakels detecteren.
+
+---
+
+## Display (TM1637 4-cijferig display)
+
+> **Aansluiting:** sluit CLK aan op P13 en DIO op P14 (of andere vrije pinnen).  
+> **Let op:** gebruik geen jumper wires op P0 (buzzer), en niet op pinnen die je al gebruikt voor sonar of motoren.
+
+### `display instellen CLK ... DIO ...`
+Stel in welke pinnen je gebruikt voor het display. Gebruik dit blok **eenmalig** bij het opstarten (`on start`).
+
+### `display toon getal ...`
+Toont een getal op het display. Werkt van -999 tot 9999.
+
+### `display wissen`
+Maakt het display leeg.
+
+### `display helderheid ...`
+Stel de helderheid in van 0 (donkerst) tot 7 (felst).
 
 ---
 
